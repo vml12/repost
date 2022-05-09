@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AGENDA</title>
+    <link rel="stylesheet" href="stile.css">
+    <script src="./localstorage.js"></script>
+    <script src="./agenda.js"></script>
+
+</head>
+
+<body>
+    <header class="header">
+        <nav class="nav">
+            <a href="Agendas.html" class="logo nav-link">LOGO</a>
+            <button class="nav-toggle">
+                Menu
+            </button>
+            <ul class="nav-menu nav-menu_visible">
+                <li class="nav-menu-item">
+                    <a href="./notas.html" class="nav-menu-link nav-link">Notas</a>
+                </li>
+                <li class="nav-menu-item">
+                    <a href="./acercaDe.html" class="nav-menu-link nav-link">Acerca de</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section>
+            <h1>Escribe tu Nota</h1>
+        </br>
+            <center>
+                <input id="note" type="text" class="redondeado" placeholder="Nombre de la nota" >
+            </br>
+        </br>
+                <textarea id="text" class="redondeado" placeholder="Escriba" id="textarea"  cols="50" rows="20"></textarea>
+                </br>
+            </br>
+                <button class="redondeado" onclick="Almacenar()">Almacenar</button></center>
+        </section>
+</body>
+
+</html>

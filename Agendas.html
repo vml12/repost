@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AGENDA</title>
+    <link rel="stylesheet" href="stile.css">
+    <script src="./localstorage.js"></script>
+    <script src="./agenda.js"></script>
+
+</head>
+
+<body>
+    <header class="header">
+        <nav class="nav">
+            <a href="Agendas.html" class="logo nav-link">LOGO</a>
+            <button class="nav-toggle">
+                Menu
+            </button>
+            <ul class="nav-menu nav-menu_visible">
+                <li class="nav-menu-item">
+                    <a href="./notas.html" class="nav-menu-link nav-link">Notas</a>
+                </li>
+                <li class="nav-menu-item">
+                    <a href="./acercaDe.html" class="nav-menu-link nav-link">Acerca de</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <main id="caja">
+        <section>
+            <h1>Ingresa Tus Datos</h1>
+        </section>
+        <div>
+            <center>
+                <form action="" id="form">
+                
+                    <input type="text" class="redondeado" placeholder="escriba su nombre" id="name">
+                        </br>
+                        </br>
+                    <input type="text" class="redondeado" placeholder="escriba su apellido" id="lastname">
+                        </br>
+                        </br>
+                    <input type="text" class="redondeado" placeholder="escriba su documento" id="doc">
+                </form>
+
+                </br>
+
+                </br>
+                <a href="./notas.html"><button class="redondeado" onclick="guardar()">Guardar Datos</button></a>
+                <button class="redondeado" onclick="mostrar()">Mostrar Datos</button>
+            </center>
+        </div>
+    </main>
+</body>
+
+</html>
